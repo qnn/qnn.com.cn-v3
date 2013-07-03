@@ -1,0 +1,49 @@
+---
+layout: default
+permalink: /news/
+---
+<div class="clear"></div>
+<div>
+  <img alt="保险柜" src="/images/splash.png" width="1000" height="650" />
+</div>
+<div class="clear"></div>
+<div class="content">
+  <div class="tabber">
+    <ul class="tabs">
+      <li><a class="active" href="#">企业动态</a></li>
+      <li><a href="#">媒体报道</a></li>
+      <li><a href="#">品牌活动</a></li>
+      <li><a href="#">行业新闻</a></li>
+    </ul>
+  </div>
+  <div class="con con1">
+		<div class="newslist mt10px">
+  		<ul>{% for post in site.categories["news"] %}{% if post.type_eng == "enterprise-news" %}
+  			<li><em>{{ post.date | date:'%Y-%m-%d' }}</em><a href="{{ post.url }}" class="title">{{ post.title }}</a></li>{% endif %}{% endfor %}
+  		</ul>
+    </div>
+  </div>
+  <div class="con con2 hidden">
+		<div class="newslist mt10px">
+  		<ul>{% for post in site.categories["news"] %}{% if post.type_eng == "media-reports" %}
+  			<li><em>{{ post.date | date:'%Y-%m-%d' }}</em><a href="{{ post.url }}" class="title">{{ post.title }}</a></li>{% endif %}{% endfor %}
+  		</ul>
+    </div>
+  </div>
+  <div class="con con3 hidden">
+		<div class="newslist mt10px">
+  		<ul>{% for post in site.categories["news"] %}{% if post.type_eng == "brand-activities" %}
+  			<li><em>{{ post.date | date:'%Y-%m-%d' }}</em><a href="{{ post.url }}" class="title">{{ post.title }}</a></li>{% endif %}{% endfor %}
+  		</ul>
+    </div>
+  </div>
+  <div class="con con4 hidden">
+		<div class="newslist mt10px">
+  		<ul>{% for post in site.categories["news"] %}{% if post.type_eng == "industry-news" %}
+  			<li><em>{{ post.date | date:'%Y-%m-%d' }}</em><a href="{{ post.url }}" class="title">{{ post.title }}</a></li>{% endif %}{% endfor %}
+  		</ul>
+    </div>
+  </div>
+</div>
+
+<div class="clear"></div>
