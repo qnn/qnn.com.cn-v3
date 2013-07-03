@@ -266,7 +266,7 @@ $(document).ready(function () {
         })
     })
     $("#prodselector").sliderkit({
-			auto:false,
+			auto:true,
 			autospeed:4000,
 			shownavitems:6,
 			circular:false,
