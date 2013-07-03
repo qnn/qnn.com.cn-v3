@@ -15,17 +15,6 @@ permalink: /contact/
     </ul>
   </div>
   <div class="con con1">
-    <div id="allmap" style="width: 700px; height: 500px; margin: 5px 30px auto;">  
-		    <div id="map" style="height:100%;"></div>
-		</div>
-		<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
-		<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
-		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
-		<script type="text/javascript">
-		var map=new BMap.Map("map"),poi=new BMap.Point(113.218127, 22.847142);map.centerAndZoom(poi,17);map.enableScrollWheelZoom();
-		var content='<div style="margin:0;line-height:20px;padding:2px;">地址：广东省佛山市顺德大良街道凤翔工业区德翔路8号</div>',searchInfoWindow=new BMapLib.SearchInfoWindow(map,content,{title:"全能保险柜总部",width:200,height:40,panel:"panel",enableAutoPan:!0,searchTypes:[BMAPLIB_TAB_SEARCH,BMAPLIB_TAB_TO_HERE,BMAPLIB_TAB_FROM_HERE]}),marker=new BMap.Marker(poi);marker.enableDragging();marker.addEventListener("click",function(a){searchInfoWindow.open(marker)});
-		map.addOverlay(marker);searchInfoWindow.open(marker);
-		</script>
     <p><b>全能保险柜总部</b></p>
     <p>总部地址：广东省佛山市顺德大良街道凤翔工业区德翔路8号</p>
     <p>总部电话：0757-22308180</p>
@@ -45,25 +34,18 @@ permalink: /contact/
     <p><b>全能保险柜市场部（负责媒体咨询，展会）</b></p>
     <p>联系电话：0757-22308195</p>
   </div>
-    <div class="con con2">
-    <p><b>全能保险柜总部</b></p>
-    <p>总部地址：广东省佛山市顺德大良街道凤翔工业区德翔路8号</p>
-    <p>总部电话：0757-22308180</p>
-    <p>传真电话：0757-22308266、0757-22308282</p>
-    <p><b>全能保险柜国内销售部（负责招商加盟，渠道管理）</b></p>
-    <p>联系电话：0757-22308181、0757-22308182</p>
-    <p>E-mail：sales@qnn.com.cn</p>
-    <p><b>全能保险柜国内销售部（负责工程订做）</b></p>
-    <p>联系电话：0757-22308196、0757-22308186</p>
-    <p>E-mail：sales@qnn.com.cn</p>
-    <p><b>全能保险柜出口销售部</b></p>
-    <p>联系电话：0757-22308233、0757-22308234、0757-22308235</p>
-    <p>E-mail：export@qnn.com.cn;export1@qnn.com.cn</p>
-    <p><b>全能保险柜售后服务（负责产品售后）</b></p>
-    <p>全国免费服务热线：400-830-4555</p>
-    <p>售后服务热线：0757-22308180</p>
-    <p><b>全能保险柜市场部（负责媒体咨询，展会）</b></p>
-    <p>联系电话：0757-22308195</p>
+  <div class="con con2 hidden">
+    <div id="allmap" style="width: 920px; height: 400px; margin: 20px 30px;">  
+		    <div id="map" style="height:100%;"></div>
+		</div>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
+		<script type="text/javascript">
+		var map=new BMap.Map("map"),poi=new BMap.Point(113.218127, 22.847142);map.centerAndZoom(poi,17);map.enableScrollWheelZoom();
+		var content='<div style="margin:0;line-height:20px;padding:2px;">地址：广东省佛山市顺德大良街道凤翔工业区德翔路8号</div>',searchInfoWindow=new BMapLib.SearchInfoWindow(map,content,{title:"全能保险柜总部",width:200,height:40,panel:"panel",enableAutoPan:!0,searchTypes:[BMAPLIB_TAB_SEARCH,BMAPLIB_TAB_TO_HERE,BMAPLIB_TAB_FROM_HERE]}),marker=new BMap.Marker(poi);marker.enableDragging();marker.addEventListener("click",function(a){searchInfoWindow.open(marker)});
+		map.addOverlay(marker);searchInfoWindow.open(marker);
+		</script>
   </div>
 </div>
 
