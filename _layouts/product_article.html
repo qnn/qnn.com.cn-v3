@@ -9,7 +9,7 @@ layout: default
           {% for post in site.categories["products"] %}{% if post.type == page.type %}
 					<li>
 						<a href="{{ post.url }}"><img src="http://www.qnnsafe.com/image-pro/{{ post.images[0] }}" /></a>
-						<h3>{{ post.type }} {{ post.title }}</h3>
+						<h3>{{ post.title }}</h3>
 					</li>{% endif %}{% endfor %}
 				</ul>
 			</div>
