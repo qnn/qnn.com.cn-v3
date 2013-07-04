@@ -292,8 +292,8 @@ text-decoration: none;
 }
 .panel .pc_l {
 float: left;
-width: 50%;
-margin-bottom: 8px;
+width: 90%;
+margin-bottom: 16px;
 }
 .panel .pc_l a {
 padding: 2px;
