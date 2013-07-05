@@ -172,7 +172,7 @@ font-size: 0;
 background: url(images/sep.jpg) no-repeat;
 }
 #menu a {
-width: 160px;
+width: 140px;
 display: block;
 float: left;
 padding: 8px 0;
@@ -189,11 +189,11 @@ color: #db291d;
 text-decoration: none;
 background: none;
 }
-#lnkper {
-width: 180px !important;
+#lnkper0 {
+width: 144px !important;
 }
 #lnkper6 {
-width: 180px !important;
+width: 156px !important;
 }
 #menupop, #menupop2 {
 z-index: 9999;

@@ -97,7 +97,7 @@ $(document).ready(function () {
     $("#menupop, #menupop2").css({
         position: "absolute",
         top: $("#lnkper").offset().top + $("#lnkper").outerHeight(),
-        left: $("#lnkper").offset().left,
+        left: $("#lnkper0").offset().left,
         width: $("#menu").width()
     });
     1 == $("#allintros").length && $("#allintros").css({
