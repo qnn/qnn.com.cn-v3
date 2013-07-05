@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<div class="clear"></div>
+	<div id="prodselector" class="sliderkit">
+		<div class="sliderkit-nav">
+			<div class="sliderkit-nav-clip">
+				<ul>
+          {% for post in site.categories["products"] %}{% if post.type == page.type %}
+					<li>
+						<a href="{{ post.url }}"><img src="http://www.qnnsafe.com/image-pro/{{ post.images[0] }}" /></a>
+						<h3>{{ post.title }}</h3>
+					</li>{% endif %}{% endfor %}
+				</ul>
+			</div>
+			<div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-prev"><a href="#" title="Scroll to the left"><span>Previous</span></a></div>
+			<div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a href="#" title="Scroll to the right"><span>Next</span></a></div>
+		</div>
+	</div>
+<div class="clear"></div>
+<div>
+  <img alt="保险柜" src="/images/splash.png" width="1000" height="650" />
+</div>
+<div class="clear"></div>
+<div class="content">
+  <div class="tabber">
+    <ul class="tabs">
+      <li><a class="active" href="#">产品概述</a></li>
+      <li><a href="#">功能特征</a></li>
+      <li><a href="#">产品参数</a></li>
+      <li><a href="#">服务与支持</a></li>
+    </ul>
+  </div>
+  <div class="con con1">
+		{{ page.features | replace:'%PRODIMGS%',site.prodimgs | markdownify }}
+  </div>
+  <div class="con con2 hidden">
+		{{ page.spec_details | replace:'%PRODIMGS%',site.prodimgs | markdownify }}
+  </div>
+  <div class="con con3 hidden">
+		{{ page.manual | replace:'%PRODIMGS%',site.prodimgs | markdownify }}
+  </div>
+  <div class="con con4 hidden">
+		<h3>输入密码无反应、显示屏或指示灯无显示：</h3>
+		<ol>
+			<li>柜内电池没电，需要更换电池，按说明书方式操作，找到保险柜门板后面的电池盒更换电池。</li>
+			<li>系统处于睡眠状态，通过按A\B键唤醒系统。</li>
+			<li>输错密码键盘被锁，等待15分钟后再进行操作。</li>
+			<li>以上无法解决您的问题，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+		</ol>
+		<h3>显示屏显示电池没电，更换电新后仍不通电或仍显示没电：</h3>
+		<ol>
+			<li>查询电池是否有装反正负极。</li>
+			<li>若电池正负极已安装正确，显示屏仍无显示或显示没电，属显示屏处出现故障，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+		</ol>
+		<h3>保险柜内部电池盒有电，接入外接电池盒不通电：</h3>
+		<ol>
+			<li>外接电池盒更换新电池，检查是否有装反正负极。</li>
+			<li>上述不能解决，属外接电池盒已损坏，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+		</ol>
+		<h3>耗电量大，一周换几次电池：</h3>
+		<ol>
+			<li>请选用质量较好的碱性电池。</li>
+		</ol>
+		<h3>密码正确输入，操作一切正确，钥匙不能转动，门打不开：</h3>
+		<ol>
+			<li>锁具有问题，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+		</ol>
+		<h3>忘记密码，钥匙掉失无法开柜：</h3>
+		<ol>
+			<li>请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+		</ol>
+  </div>
+</div>
+
+<div class="clear"></div>
