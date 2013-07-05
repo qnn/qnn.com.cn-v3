@@ -1,5 +1,7 @@
 relative_permalinks: false
 
+url: http://test2.html9.com
+
 title: 全能保险柜官网
 
 permalink: /:categories/:title.html
