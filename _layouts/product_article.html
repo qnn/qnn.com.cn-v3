@@ -19,7 +19,11 @@ layout: default
 	</div>
 <div class="clear"></div>
 <div>
+{% if page.banner %}
+  {{ page.banner }}
+{% else %}
   <img alt="保险柜" src="/images/splash.png" width="1000" height="650" />
+{% endif %}
 </div>
 <div class="clear"></div>
 <div class="content">
