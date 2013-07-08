@@ -20,7 +20,7 @@ layout: default
 <div class="clear"></div>
 <div>
 {% if page.banner %}
-  {{ page.banner }}
+  {{ page.banner | replace:'%PRODIMGS%',site.prodimgs }}
 {% else %}
   <img alt="保险柜" src="/images/splash.png" width="1000" height="650" />
 {% endif %}
