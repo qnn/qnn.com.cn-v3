@@ -930,7 +930,7 @@ background: #ececec !important;
 margin: 0 auto;
 }
 .photoslider-bullets{width:1000px;height:600px;}
-.photoslider-bullets .sliderkit-nav{position:absolute;top:628px;right:10px;}
+.photoslider-bullets .sliderkit-nav{position:absolute;top:588px;right:10px;}
 * html .photoslider-bullets .sliderkit-nav {right:auto;left:900px;}
 .photoslider-bullets .sliderkit-nav-clip ul li{float:left;margin:0 2px 0 0;}
 .photoslider-bullets .sliderkit-nav-clip ul li a{width:16px;height:16px;background:#fff;}
