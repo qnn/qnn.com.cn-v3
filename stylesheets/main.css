@@ -2114,7 +2114,7 @@ margin: 15px 0 15px 43px;
 .con p {
 margin: 0 15px 20px;
 font-size: 14px;
-text-indent: 28px;
+text-indent: -21px;
 line-height: 25px;
 }
 .con ul, .con ol {
